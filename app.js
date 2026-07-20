@@ -4,7 +4,7 @@
 let players =
 JSON.parse(localStorage.getItem("players")) || [];
 
-
+  
 // 今日參加球友
 let todayPlayers = [];
 
