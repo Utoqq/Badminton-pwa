@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羽球分組</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1976d2">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   	<h1>勁捷大帥哥</h1>
+	<h1>🏸 羽球分組</h1>
+    <div class="card">
+        <h2>新增球友</h2>
+        <input id="name" placeholder="姓名">
+        <input id="level" type="number" placeholder="能力值">
+        <button onclick="addPlayer()">新增球友</button>
+    </div>
+
+    <div class="card">
+        <h2>今日球局</h2>
+        球場數：
+        <input id="court" type="number" value="1" min="1">
+        <button onclick="selectAllPlayers()">全部選取</button>
+        <button onclick="clearAllPlayers()">取消全部</button>
+        
+        <h3>參加人員</h3>
+        <div id="selectPlayers"></div>
+        
+        <button onclick="nextRound()">下一輪</button>
+        <button class="end" onclick="endToday()">結束今日球局</button>
+    </div>
+
+    <div class="card">
+        <h2>今日狀態</h2>
+        <div id="status" class="status">尚未開始球局</div>
+    </div>
+
+    <div class="card">
+        <h2>比賽結果</h2>
+        <div id="result"></div>
+    </div>
+
+    <div class="card">
+        <div class="playerHeader">
+            <h2>球友列表</h2>
+            <div>
+                <select id="sortType" onchange="render()">
+                    <option value="name">姓名</option>
+                    <option value="level">能力值</option>
+                </select>
+                <button class="danger smallBtn" onclick="deleteAllPlayers()">全部刪除</button>
+            </div>
+        </div>
+        <div id="players"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        if("serviceWorker" in navigator){
+            navigator.serviceWorker.register("service-worker.js");
+        }
+    </script>
+</body>
+</html>

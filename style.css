@@ -1,0 +1,142 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", sans-serif;
+    padding: 15px;
+    background: #f3f3f3;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #1976d2;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.end {
+    background: #f57c00;
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.status {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.match {
+    background: #eaf5ff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* ===== 球友列表 Header ===== */
+.playerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.playerHeader h2 {
+    margin: 0;
+}
+
+.playerHeader div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* ===== 縮小版球友列表樣式 ===== */
+.player-compact {
+    background: white;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.player-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.player-stats {
+    font-size: 13px;
+    color: #666;
+}
+
+.player-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.player-actions button {
+    width: auto;
+    margin: 0;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.edit {
+    background: #43a047;
+}
+
+.delete, .danger {
+    background: #e53935;
+}
+
+.smallBtn {
+    width: auto;
+    padding: 8px 14px;
+    font-size: 14px;
+}
+
+/* 上方的核取方塊排版 */
+.checkbox-label {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
